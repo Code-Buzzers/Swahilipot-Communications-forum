@@ -1,6 +1,7 @@
 **System Documentation**
 
 **1. Introduction**
+
 The Swahilipot Hub Email and SMS System is a Django-based web application designed to manage member emails and send notifications via email and SMS. It allows administrators to add new members, send email notifications to individual members, and broadcast emails and SMS messages to all members at once. This documentation provides an overview of the system's features, architecture, and usage instructions.
 
 **2. Features**

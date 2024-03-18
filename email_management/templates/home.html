@@ -1,0 +1,31 @@
+{% extends 'base.html' %} {% block content %}
+{% load static %}
+
+  </head>
+  <body>
+    <img src="{% static 'static/img/swahililogo.svg' %}" alt="My Image">
+    <header class="bg-primary text-white py-5">
+      
+
+      <div class="container px-4 px-lg-5 my-5">
+        <div class="text-center">
+          <h1 class="display-4 fw-bolder">
+            SWAHILIPOT <span class="text-warning">COMMUNICATIONS</span>
+          </h1>
+          <p class="lead fw-normal-50 mb-0">Communicate here...</p>
+        </div>
+      </div>
+    </header>
+    
+    
+    <br /><br />
+    <br /><br />
+    <div class="text-center">
+      <a href="{% url 'add_email' %}" class="btn btn-primary mx-5 mb-5">Add Email</a>
+      <a href="{% url 'send_emails' %}" class="btn btn-primary mx-5 mb-5">Send Emails</a>
+
+      <a href="{% url 'sms_form' %}" class="btn btn-primary mx-5 mb-5">Send sms</a>
+    </div>
+  </body>
+
+{% endblock %}

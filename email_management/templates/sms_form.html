@@ -1,0 +1,24 @@
+{% extends 'base.html' %} {% block content %}
+<header class="bg-primary text-white py-5">
+  <div class="container px-4 px-lg-5 my-5">
+    <div class="text-center">
+      <h1 class="display-4 fw-bolder">
+        SWAHILIPOT <span class="text-warning">COMMUNICATIONS</span>
+      </h1>
+      <p class="lead fw-normal-50 mb-0">Communicate here...</p>
+    </div>
+  </div>
+</header>
+
+<!-- sms_form.html -->
+<br /><br />
+<div class="d-flex justify-content-center">
+  <form class="p-3" method="post">
+    {% csrf_token %} {{ form.as_p }}
+    <button class="btn btn-primary mx-5 mb-5" type="submit">
+      Send Message
+    </button>
+    <a href="{% url 'home' %}" class="btn btn-primary mx-5 mb-5">QUIT</a>
+  </form>
+</div>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'base.html' %} {% block content %}
+<header class="bg-primary text-white py-5">
+  <div class="container px-4 px-lg-5 my-5">
+    <div class="text-center">
+      <h1 class="display-4 fw-bolder">
+        SWAHILIPOT <span class="text-warning">COMMUNICATIONS</span>
+      </h1>
+      <p class="lead fw-normal-50 mb-0">Communicate here...</p>
+    </div>
+  </div>
+</header>
+<h1>Message Sent Successfully!</h1>
+
+<br></br>
+
+<a href="{% url 'home' %}" class="btn btn-primary mx-5 mb-5">OK</a>
+{% endblock %}
